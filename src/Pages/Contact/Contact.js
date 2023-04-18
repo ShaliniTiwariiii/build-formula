@@ -54,7 +54,7 @@ function Contact() {
   return (
     <form className={style.main} >
       <CustomInput placeholder="First Name" value={fname} onChange={(e)=>setFname(e.target.value)}/>
-      {fnameMessage}
+  {fnameMessage}
       <CustomInput placeholder="Last Name" value={lname} onChange={(e)=>setLname(e.target.value)} />
       {lnameMessage}
       <CustomInput placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)} />

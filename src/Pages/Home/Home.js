@@ -17,8 +17,11 @@ function Home() {
       {newData?.map((data)=>{return(<>
        <h1>{data.fname}</h1>
        <h1>{data.lname}</h1>
+       {data.fname?
+       <CustomButton onClick={handleClear} txt={'clear'} color={'error'}/>:''}
       </>)})}
-      <CustomButton onClick={handleClear} txt={'clear'} color={'error'}/>
+     
+     
     </div>
   )
 }
